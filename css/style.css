@@ -1,0 +1,91 @@
+/*=============================
+==== Base Elements Styles ====
+============================*/
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+h2,
+h3,
+a {
+	color: #093a58;
+}
+h2,
+h3 {
+	margin-top: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+/*=============================
+==== Base Layout Styles ====
+============================*/
+.hero-bg {
+    height: 700px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg.jpg') no-repeat center fixed;
+    background-size: cover;
+    padding-top: 1px;
+}
+/* Nav */
+.header-title {
+    font-size: 1.25em;
+    color: #f1b065;
+}
+.main-nav {
+    margin-top: 10px;
+}
+.header-title a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+}
+.main-nav a {
+    font-size: 0.95em;
+    text-transform: uppercase;
+}
+/* ---- Layout Containers ---- */
+.prof-info {
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+.group::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*=============================
+======== Media Queries =======
+============================*/
+
+@media (min-width: 769px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .header-title {
+        float: left;
+    }
+    .main-nav {
+        float: right;
+    }
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+    
+}
