@@ -91,7 +91,18 @@ img {
 /*=============================
 ======== Media Queries =======
 ============================*/
-
+@media (min-width: 320px) {
+    .my-name {
+        float: left;
+    }
+    .back-to-top {
+        text-transform: uppercase;
+        float: right;
+    }
+    .footer-container ul {
+        display: none;
+    }
+}
 /* @media (min-width: 769px) {
     .container {
         width: 90%;
