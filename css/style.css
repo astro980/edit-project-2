@@ -27,9 +27,6 @@ li {
 a {
 	text-decoration: none;
 }
-img {
-	max-width: 100%;
-}
 /*=============================
 ==== Base Layout Styles ====
 ============================*/
@@ -53,22 +50,23 @@ img {
     display: block;
     padding: 10px 15px;
 }
+.header-title a,
+.my-name {
+    color: #f1b065;
+}
 .main-nav a {
     font-size: 0.95em;
     text-transform: uppercase;
 }
-/* Main */
-/* .portfilio-title {
-    text-align: center;
-} */
-/* ---- Layout Containers ---- */
-.prof-info {
-    display: block;
-    padding: 10px 15px;
+.main-nav li a {
+    color: #f1b065;
+    transition: all 1s;
+}
+.main-nav li a:hover {
     color: #fff;
-    text-align: center;
 }
 .self-intro {
+    margin-top: 30px;
     padding: 20px 10px;    
 }
 .prof-img {
@@ -83,6 +81,41 @@ img {
     opacity: 1;
     transform: scale(1.03);
 }
+.portfolio-title,
+.article-box,
+.contact-container {
+    padding: 40px 0; 
+    text-align: center;
+}
+.port-img {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 300px;
+}
+/* Main */
+.port-img { 
+    opacity: 0.9;
+    transform: scale(1.15);
+    transition: 0.5s, 0.5s;
+}
+.port-img:hover {
+    opacity: 1;
+    transform: scale(1.03)
+}
+/* Footer */
+footer-nav li {
+    margin: 40px;
+}
+
+/* ---- Layout Containers ---- */
+.prof-info {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-align: center;
+}
+
 .group::after {
     content: "";
     display: table;
@@ -91,8 +124,12 @@ img {
 /*=============================
 ======== Media Queries =======
 ============================*/
-@media (min-width: 320px) {
-    .my-name {
+@media (min-width: 320px) {    
+    .my-name,
+    .back-to-top {
+        margin: 0 20px 40px 20px;
+    }
+    .my-name {         
         float: left;
     }
     .back-to-top {
