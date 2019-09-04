@@ -66,6 +66,7 @@ a {
     color: #fff;
 }
 .self-intro {
+    width: 300px;
     margin-top: 30px;
     padding: 20px 10px;    
 }
@@ -83,7 +84,9 @@ a {
 }
 .portfolio-title,
 .article-box,
-.contact-container {
+.contact-container,
+.apps__download,
+.reviews {
     padding: 40px 0; 
     text-align: center;
 }
@@ -102,6 +105,10 @@ a {
 .port-img:hover {
     opacity: 1;
     transform: scale(1.03)
+}
+.apps__tag {
+    height: 300px;
+    width: 400px;
 }
 /* Footer */
 footer-nav li {
@@ -124,7 +131,7 @@ footer-nav li {
 /*=============================
 ======== Media Queries =======
 ============================*/
-@media (min-width: 320px) {    
+@media (min-width: 320px) and (max-width:768px) {    
     .my-name,
     .back-to-top {
         margin: 0 20px 40px 20px;
@@ -140,26 +147,61 @@ footer-nav li {
         display: none;
     }
 }
-/* @media (min-width: 769px) {
+@media (min-width: 769px) {
+    /* Header */
     .container {
         width: 90%;
         margin: 0 auto;
     }
-    .header-title {
-        float: left;
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-container {
+        display: flex;
+        flex-direction:  column;
+        align-items: center;
+        margin-bottom: 20px;
     }
     .main-nav {
-        float: right;
+        display: flex;
     }
-    .main-nav li {
-        display: inline-block;
-        margin-left: 15px;
+    .prof-info {
+        display: flex;
+        flex-direction: row;
     }
     .self-intro {
-        float: left;
+        font-size: 20px;
+    } 
+    .prof-img {
+        margin-left: 80px;
     }
-    .pro-img {
-        float: right;
-    }
-    
-} */
+      /* Main */
+      .col {
+          width: 40%;
+          display: inline-block;
+          margin: 20px 33.5px;
+      }
+      /* Footer */
+      .back-to-top {
+          display: none;
+      }
+      .footer-nav {
+          display: flex;
+          margin-right: 100px;
+          align-items: center;
+      }
+      .footer-container ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+      }
+      .footer-container li a {
+          margin: 10px 15px;
+          transition: all 1s;
+      }
+      .footer-container li a:hover {
+        color: #000;
+    }       
+}
