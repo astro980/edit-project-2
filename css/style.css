@@ -31,7 +31,7 @@ a {
 ==== Base Layout Styles ====
 ============================*/
 .hero-bg {
-    height: 900px;
+    height: 710px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg.jpg') no-repeat center fixed;
     background-size: cover;
     padding-top: 1px;
@@ -55,7 +55,6 @@ a {
     color: #f1b065;
 }
 .main-nav a {
-    font-size: 0.95em;
     text-transform: uppercase;
 }
 .main-nav li a {
@@ -99,12 +98,12 @@ a {
 /* Main */
 .port-img { 
     opacity: 0.9;
-    transform: scale(1.15);
+    transform: scale(1);
     transition: 0.5s, 0.5s;
 }
 .port-img:hover {
     opacity: 1;
-    transform: scale(1.03)
+    transform: scale(1.10);
 }
 /* Apps area style */
 .apps__tag {
@@ -120,7 +119,7 @@ a {
 .btn {
     border: 1px solid #000;
     border-radius: 30px;
-    padding: 10px;
+    padding: 5px;
     transition: all 1s;
     color: #000;
 }
@@ -169,7 +168,7 @@ footer-nav li {
 /*=============================
 ======== Media Queries =======
 ============================*/
-@media (min-width: 320px) and (min-width: 767px) {    
+@media (min-width: 320px) {    
     .footer-nav {
         font-size: 10px;
         display: flex;
@@ -183,11 +182,7 @@ footer-nav li {
     }
 }
 @media (min-width: 768px) {
-    /* Header */
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
+    /* Header */    
     .header__container {
         display: flex;
         flex-direction: column;
@@ -213,6 +208,10 @@ footer-nav li {
         margin-left: 80px;
     }
       /* Main */
+      .container {
+        width: 90%;
+        margin: 0 auto;
+    }
       .col {
           width: 40%;
           display: inline-block;
@@ -223,14 +222,22 @@ footer-nav li {
           display: none;
       }
       .footer-nav {
+          font-size: 12px;
           display: flex;
-          margin-right: 100px;
+          margin-top: 15px;
+          margin-left: 50px;
           align-items: center;
+      }
+      .footer-container {
+          border-top: #000 1px solid;
       }
       .footer-container ul {
           display: flex;
           flex-direction: row;
           justify-content: center;
+      }
+      .footer-nav-position {
+          margin-left: 300px;
       }
       .footer-container li a {
           margin: 10px 15px;
@@ -239,4 +246,65 @@ footer-nav li {
       .footer-container li a:hover {
         color: #000;
     }       
+}
+@media (min-width: 1020px) {
+    /* Header */
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .header-title {
+        display: flex;
+        align-self: flex-start;
+    }     
+    .main-nav {
+        align-self: flex-end;
+        margin-left: auto;
+    }
+    .prof-info {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    } 
+    .self-intro {
+        margin-right: 100px;
+    }
+    /* Portfolio Layout */
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .col {
+        align-items: center;
+        width: 26%;
+    }
+    /* Apps Layout */
+    .apps__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .apps_container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 45%;
+    }
+    .apps__tag {
+        padding-left: 70px;
+    }
+    /* Review Layout */
+    .review__container {
+        height: 400px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
