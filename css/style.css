@@ -31,7 +31,7 @@ a {
 ==== Base Layout Styles ====
 ============================*/
 .hero-bg {
-    height: 700px;
+    height: 900px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg.jpg') no-repeat center fixed;
     background-size: cover;
     padding-top: 1px;
@@ -74,13 +74,13 @@ a {
     margin: 10px 0;
     opacity: 0.5;
     border-radius: 50%;
-    transform: scale(1.15);
+    transform: scale(0.95);
     transition: transform 0.5s, opacity 0.5s;
     border: double red 3px;     
 }
 .prof-img:hover {
     opacity: 1;
-    transform: scale(1.03);
+    transform: scale(0.80);
 }
 .portfolio-title,
 .article-box,
@@ -106,9 +106,47 @@ a {
     opacity: 1;
     transform: scale(1.03)
 }
+/* Apps area style */
 .apps__tag {
     height: 300px;
     width: 400px;
+}
+.apps-title {    
+    padding-bottom: 30px;
+}
+.apps__download img{
+    margin: 20px 0;
+}
+.btn {
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: 10px;
+    transition: all 1s;
+    color: #000;
+}
+.btn:hover {
+    background: #093a58;
+    color: #fff;
+}
+/* Review Styles */
+.reviews__title {
+    margin-bottom: 40px;
+}
+.review__container {
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 1px 5px 15px rgba(0,0,0,0.4);
+    height: 400px;
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    background: linear-gradient(to bottom right,#67b26f,#4ca2cd);
+}
+.review--img {
+    margin: 20px 0;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
 /* Footer */
 footer-nav li {
@@ -131,23 +169,20 @@ footer-nav li {
 /*=============================
 ======== Media Queries =======
 ============================*/
-@media (min-width: 320px) and (max-width:768px) {    
-    .my-name,
-    .back-to-top {
-        margin: 0 20px 40px 20px;
-    }
-    .my-name {         
-        float: left;
-    }
+@media (min-width: 320px) and (min-width: 767px) {    
+    .footer-nav {
+        font-size: 10px;
+        display: flex;
+    }    
     .back-to-top {
         text-transform: uppercase;
-        float: right;
+        margin-left: 80px;
     }
     .footer-container ul {
         display: none;
     }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     /* Header */
     .container {
         width: 90%;
