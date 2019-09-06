@@ -307,4 +307,16 @@ footer-nav li {
         flex-direction: row;
         justify-content: center;
     }
+    .review--img { 
+        height: 15%;
+        width: 25%;
+    }
+    .review__tag {
+        width: 80%;
+        display: flex;
+        border: 1px red solid;
+    }
+    .review__tag--content1 {
+        border: 1px red solid;
+    }
 }
