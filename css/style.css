@@ -260,7 +260,7 @@ footer-nav li {
         color: #000;
     }       
 }
-@media (min-width: 1020px) {
+@media (min-width: 1024px) {
     /* Header */
     .header__container {
         display: flex;
