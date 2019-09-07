@@ -31,7 +31,7 @@ a {
 ==== Base Layout Styles ====
 ============================*/
 .hero-bg {
-    height: 710px;
+    height: 800px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg.jpg') no-repeat center fixed;
     background-size: cover;
     padding-top: 1px;
@@ -321,8 +321,8 @@ footer-nav li {
         justify-content: center;
     }
     .review--img { 
-        height: 20%;
-        width: 25%;
+        height: 100px%;
+        width: 125px;
     }
     .review__tag {
         display: flex;
@@ -335,7 +335,7 @@ footer-nav li {
     }
     .review__tag--content1 h2{  
         margin-left: 20px;
-        padding-top: 70px; 
+        padding-top: 10px; 
         font-size: 15px; 
         color: #fff;
     }
