@@ -331,7 +331,7 @@ footer-nav li {
     }
     .review__tag--content1 {        
         display: flex;
-        flex-direction: column wrap;
+        flex-direction: column;
     }
     .review__tag--content1 h2{  
         margin-left: 20px;
