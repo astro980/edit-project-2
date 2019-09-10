@@ -159,6 +159,11 @@ footer-nav li {
     color: #fff;
     text-align: center;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .group::after {
     content: "";
