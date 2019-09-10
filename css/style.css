@@ -31,7 +31,7 @@ a {
 ==== Base Layout Styles ====
 ============================*/
 .hero-bg {
-    height: 710px;
+    height: 800px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg.jpg') no-repeat center fixed;
     background-size: cover;
     padding-top: 1px;
@@ -126,6 +126,19 @@ a {
 .btn:hover {
     background: #093a58;
     color: #fff;
+}
+/* Contact Styles */
+.contact-container {
+    margin: 200px 0;
+}
+.skills,
+.box-contact {
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact-info {
+    margin-left: 10px;
+    color: #f1b065;
 }
 /* Review Styles */
 .reviews__title {
@@ -252,7 +265,7 @@ footer-nav li {
         color: #000;
     }       
 }
-@media (min-width: 1020px) {
+@media (min-width: 1024px) {
     /* Header */
     .header__container {
         display: flex;
@@ -313,15 +326,58 @@ footer-nav li {
         justify-content: center;
     }
     .review--img { 
-        height: 15%;
-        width: 25%;
+        height: 100px;
+        width: 125px;
     }
     .review__tag {
-        width: 80%;
         display: flex;
-        border: 1px red solid;
+        flex-direction: row;
+        flex: 0 0 80%;     
     }
-    .review__tag--content1 {
-        border: 1px red solid;
+    .review__tag--content1 {        
+        display: flex;
+        flex-direction: column;
     }
+    .review__tag--content1 h2{  
+        margin-left: 20px;
+        padding-top: 10px; 
+        font-size: 15px; 
+        color: #fff;
+    }
+    .review__tag--content2 {
+        flex: 1;
+        margin-top: 85px;
+        font-size: 35px;
+    }
+    .footer-nav {
+        font-size: 12px;
+        display: flex;
+        margin-top: 15px;
+        margin-left: 50px;
+        align-items: center;
+    }
+    .footer-container {
+        border-top: #000 1px solid;
+    }
+    .my-name,
+    .char-size {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .footer-container ul {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .footer-nav-position {
+        margin-left: auto;
+        padding-right: 40px;
+    }
+    .footer-container li a {
+        margin: 10px 15px;
+        transition: all 1s;
+    }
+    .footer-container li a:hover {
+      color: #f1b065;
+  }  
 }
